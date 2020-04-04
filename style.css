@@ -1,21 +1,99 @@
 /* _______________________________ variables _______________________________ */
+:root {
+  --primary: #ffc636;
+  --secondary: #0a0b5b;
+}
 
 /* _______________________________ reset _______________________________ */
+body,
+p,
+a,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+li {
+  list-style-type: none;
+}
 
 /* _______________________________ base styles _______________________________ */
+body {
+  background: var(--secondary);
+  overflow-x: hidden;
+  font-family: 'Rubik Regular';
+}
+.btn {
+  background: none;
+  border: 2px solid var(--primary);
+  color: var(--primary);
+  padding: 6px 12px;
+  border-radius: 20px;
+  text-transform: uppercase;
+  box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.6);
+  display: inline-block;
+}
+.btn:hover {
+  color: #222;
+  background: var(--primary);
+}
+input,
+textarea {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 10px 16px;
+  border-radius: 20px;
+  border: 2px solid #9893d8;
+  color: #f2f2f2;
+}
 
 /* _______________________________ fonts _______________________________ */
+@font-face {
+  font-family: 'Rubik Regular';
+  src: url(/assets/fonts/Rubik-Regular.ttf);
+}
+h1,
+h2,
+h3,
+h4 {
+  color: #dddbff;
+  font-weight: normal;
+}
+p,
+a,
+li {
+  color: #9893d8;
+}
+h1,
+h3 {
+  font-size: 1.2em;
+}
+h2 {
+  font-size: 1.6em;
+}
+h4 {
+  font-size: 1.1em;
+}
+.leading {
+  font-size: 1.1em;
+}
 
 /* _______________________________ mobile styles _______________________________ */
 
-/* _______________________________ small tablet styles _______________________________ */
+/* _____________________________ small tablet styles _____________________________ */
 @media screen and (min-width: 620px) {
 }
 
-/* _______________________________ large tablet and laptops styles _______________________________ */
+/* ________________________ large tablet and laptops styles ________________________ */
 @media screen and (min-width: 960px) {
+  body {
+    font-size: 18px;
+  }
 }
 
 /* _______________________________ desktop styles _______________________________ */
 @media screen and (min-width: 1200px) {
+  body {
+    font-size: 20px;
+  }
 }
